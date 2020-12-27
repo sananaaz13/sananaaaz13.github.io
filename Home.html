@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <style>
+       body{
+       	    background-color: white;
+       }
+      /*buttons*/
+       .btn{
+         background-color: orange;
+         color: black;
+         font-family: 'calibri';
+
+       }
+
+       /*home*/
+       #homepic{
+	        max-width: 100%
+	        max-height: auto;
+	        opacity: 0.5;
+       }
+       
+       .centered {
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+    		font-family: serif;
+    		font-size: 50px;
+    		text-align: center;
+        margin-top: 70px;
+    	}
+    	#to{
+    		font-size: 40px;
+    		text-align: center;
+        font-style: italic;
+    	}
+    	#cafe{
+    		font-size: 80px;
+    		text-align: center;
+    		font-family:'Lobster', cursive;
+        font-style: italic;
+    	}
+
+      /*Navigation bar*/
+      .navbar-brand{
+        font-size: 30px;
+        text-align: center;
+        font-family:'Lobster', cursive;
+        font-style: italic;
+        margin-left: 30px;
+      }
+
+      .nav-link{
+        color: black;
+        font-family: 'calibri';
+        font-weight: bold;
+       
+         }
+
+      #navbar-example2 .current a{
+        color: black;
+        background-color: #FBFBFB;
+      }
+
+
+
+      /*About us*/
+      h4{ 
+        display: flex; 
+        flex-direction: row; 
+      } 
+
+      h4:before, h4:after {
+       content: "";
+       flex: 1 1;
+       border-bottom: 1px solid Orange;
+       margin: auto;
+     }
+     #Aboutus{
+        font-size: 30px;
+        font-family:'Lobster', cursive;
+        
+      }
+      .para{
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        font-family: 'calibri';
+      }
+      .line{
+        color: orange;
+
+      }
+
+      /*Reviews*/
+      #Reviews{ 
+        font-size: 30px;
+        font-family:'Lobster', cursive;
+    
+
+      }
+       .card-group{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      
+      
+      /*Footer*/
+      .sub{
+        font-weight: bold;
+        font-weight: 'calibri';
+        font-size: 16px;
+      }
+      .sentence{
+        font-family: 'calibri';
+        font-size: 16px;
+      }
+      
+
+  </style>
+    
+    <!--JAVASCRIPT-->
+    <script>
+    function call() {
+        alert("You have Subscribed to Cafe Nova Newsletter!!");
+        return null;
+      }	
+    </script>	
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   
+  <!--Scrollspy Nav bar--> 
+  <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+  <a class="navbar-brand" href="home.html">Cafe Nova</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#Aboutus">About Us</a>
+    </li>
+    <li class="nav-item current" class="bg-light">
+      <a class="nav-link" href="#Reviews">Reviews</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Menu.html">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html">Gallery</a>
+    </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contactus.html">Contact Us</a>
+    </li>
+    
+  </ul>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
+  <img src="home.jpg" id="homepic" class="img-fluid" alt="Responsive image"><br>
+  <div class="centered">WELCOME
+               <p id="to">to</p>
+               <p id="cafe">Cafe Nova</p>
+               <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn" type="button" onclick="window.location.href='menu.html';">View Menu</button>
+              </div>
+  </div><br>
+
+  <!--About us-->
+  <h4 id="Aboutus">About Us</h4>
+  <p class="para">Located in Vibrant,Pedestrianised area,Cafe Nova is a bright and airy space with glazed frontage on two sides and an outside terrace.Serving our signature well travelled breakfast and all day food and drink menus, and freshly roasted coffee from our in house coffee roastery,our style is relaxed,open and friendly.Come for a coffee with the morning paper or a cocktail and small plates in the evening or anything in between!</p>
+  
+  <p class="para">Little touches like a live kitchen serving freshly cooked food (unlike the centralized kitchens of many others), offering home made tea and other international variants of the tea from almost 100 Best Teas of the world, European, Mediterranean, Italian, Mexican, Chinese cuisines, besides freshly baked Belgian Waffles and exotic coffees, Cafe Nova becomes the perfect place to stop the world a bit - and indulge your senses.</p>
+
+  <center><button type="button" class="btn" onclick="window.location.href='Gallery.html';">View Our Ambience</button></center><br>
+
+  <!--Reviews-->
+  <h4 id="Reviews">Reviews</h4>
+
+  <div class="card-group">
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">TheFoodMistress</h5>
+        <p class="card-text">I ordered kitkat waffle from tea villa it was the first time I tried waffle and today I crave for waffle each day. Just loved it❣️ and also the service is quick and the staff is well trained to handle customer the crowd and Ambience was also good. Just loved the place</p>
+        <p>Rating: 5/5</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Saniya</h5>
+        <p class="card-text">Cafe Nova is an amazing place with peaceful and beautiful ambience. The staff is very disciplined and organized. I have always been a lover of Italian food and the pasta and pizza were amazing. There are many outlets for this cafe. Please visit here and try some delicious food items.</p>
+        <p>Rating: 5/5</p>
+        <p class="card-text"><small class="text-muted">Last updated 36 mins ago</small></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Darshan</h5>
+        <p class="card-text">Great ambience, especially on days when they have live music
+             Also loved the food here. Would love to visit again</p>
+        <p>Rating: 4.5/5</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 hrs ago</small></p>
+      </div>
+    </div>
+
+  </div>
+
+</div>  
+   <!-- Footer -->
+   <footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <p class="sub">SUBSCRIBE</p>
+          <P class="sentence">To get more updates and discounts subscibe to our newsletter</P>
+          <input type="text" name="" placeholder="Email Address" id="sentence">
+          <p id="demo"></p>
+          <button type="button" class="btn" onclick="document.getElementById('demo').innerHTML=call()">SUBSCRIBE</button>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <p class="sub">LINKS</p>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="Home.html" class="text-dark">Home</a>
+            </li>
+            <li>
+              <a href="Menu.html" class="text-dark">Menu</a>
+            </li>
+            <li>
+              <a href="Gallery.html" class="text-dark">Gallery</a>
+            </li>
+            <li>
+              <a href="Contactus.html" class="text-dark">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <p class="sub">MAIN BRANCH</p>
+          <P class="sentence">Address: Ground Floor, Road No. 92 Near Apollo hospital, Jubilee Hills, Hyderabad,Telangana 500033</P>
+          <p class="sentence">Contact No: 638764846</p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <p class="sentence">© 2020 Copyright: All rights reserved.</p>
+    </div>
+    
+  </footer>
+
+  
+</body>
+</html>    

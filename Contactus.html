@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <!--CSS-->
+  <style>
+   body{
+    background-color: white;
+  }
+  /*buttons*/
+       .btn{
+         background-color: orange;
+         color: black;
+         font-family: 'calibri';
+
+       }
+  /*Navigation bar*/
+      .navbar-brand{
+        font-size: 30px;
+        text-align: center;
+        font-family:'Lobster', cursive;
+        font-style: italic;
+        margin-left: 30px;
+      }
+
+      .nav-link{
+        color: black;
+        font-family: 'calibri';
+        font-weight: bold;
+       }
+  /*Locate our cafe heading*/
+  #locate{
+        font-size: 60px;
+        font-family: 'Lobster', cursive;
+  }
+  h4{ 
+            display: flex; 
+            flex-direction: row; 
+  } 
+  
+  h4:before, h4:after {
+     content: "";
+     flex: 1 1;
+     border-bottom: 2px solid Orange;
+     margin: auto;
+  }
+
+    
+
+   /*Content*/
+   .aligned { 
+            display: flex; 
+            align-items: center; 
+        } 
+           
+    span { 
+            padding: 80px; 
+        } 
+
+  #map{
+    margin-left: 80px;
+    margin-top: 50px;
+    width: 400px;
+    height: 240px;
+   } 
+
+   h2{
+    font-weight: bold;
+        font-family: 'calibri';
+        font-size: 16px;
+        margin-left: 70px;
+  }
+
+  .add{
+      font-family: 'calibri';
+        font-size: 16px;
+        margin-left: 70px;
+  }
+  
+
+  /*Footer*/
+      .sub{
+        font-weight: bold;
+        font-weight: 'calibri';
+        font-size: 16px;
+      }
+      .sentence{
+        font-family: 'calibri';
+        font-size: 16px;
+      }
+
+
+      
+</style>
+
+<!--JAVASCRIPT-->
+<script>
+   function call() {
+        alert("You have Subscribed to Cafe Nova Newsletter!!");
+        return null;
+      } 
+    </script>
+</script> 
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+  <a class="navbar-brand" href="home.html">Cafe Nova</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Menu.html">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html">Gallery</a>
+    </li>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contactus.html">Contactus</a>
+    </li> 
+  </ul>
+</nav>
+
+  <h4 id="locate">Locate Our Cafes</h4>
+ 
+  <div class="aligned"> 
+        <img src= "map.jpg" id="map"> 
+              
+        <span>
+          <h2>Main Branch</h2>
+          <p class="add"> Ground Floor, Road No. 92 Near Apollo hospital, Jubilee Hills, Hyderabad, Telangana 500033</p>
+          <p class="add">Call:798393898</p>
+
+          <h2>Other Branch</h2>
+          <p class="add"> Ground Floor, Road No. 92 Near Apollo hospital, Jubilee Hills, Hyderabad, Telangana 500033</p>
+          <p class="add">Call:798393898</p>
+
+          <h2>Other Branch</h2>
+          <p class="add"> Ground Floor, Road No. 92 Near Apollo hospital, Jubilee Hills, Hyderabad, Telangana 500033</p>
+          <p class="add">Call:798393898</p>
+
+        </span> 
+    </div> 
+
+  <!-- Footer -->
+   <footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <p class="sub">SUBSCRIBE</p>
+          <P class="sentence">To get more updates and discounts subscibe to our newsletter</P>
+          <input type="text" name="" placeholder="Email Address" id="sentence">
+          <button type="button" class="btn" onclick="document.getElementById('demo').innerHTML=call()">SUBSCRIBE</button>
+        </div>
+        
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <p class="sub">LINKS</p>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="Home.html" class="text-dark">Home</a>
+            </li>
+            <li>
+              <a href="Menu.html" class="text-dark">Menu</a>
+            </li>
+            <li>
+              <a href="Gallery.html" class="text-dark">Gallery</a>
+            </li>
+            <li>
+              <a href="Contactus.html" class="text-dark">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <p class="sub">MAIN BRANCH</p>
+          <P class="sentence">Address: Ground Floor, Road No. 92 Near Apollo hospital, Jubilee Hills, Hyderabad,Telangana 500033</P>
+          <p class="sentence">Contact No: 638764846</p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <p class="sentence">© 2020 Copyright: All rights reserved.</p>
+    </div>
+    
+  </footer>
+
+  
+</body>
+</html> 
